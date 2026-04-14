@@ -355,6 +355,7 @@ function implentGraph(id) {
             state: {
                 ...options.state,
                 layout: {
+                    ...options.state.layout,
                     title: config.charts[id].title.replace('{{country}}', ''),
                     subtitle: config.charts[id].subtitle,
                 }
